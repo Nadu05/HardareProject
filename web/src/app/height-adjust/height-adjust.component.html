@@ -1,0 +1,35 @@
+<div class="container text-center" style="margin-top: 80px; ">
+  <div class="row text-center justify-content-center align-items-center g-2" style="margin-bottom: 50px; border: 3px  ;">
+    <div class="col">
+      <div class="card text-center">
+        <div class="card-header">
+          Height Adjust
+        </div>
+        <div class="card-body">
+          <div class="container text-center">
+            <div class="row">
+              <div class="col" style="height: 60px;">
+                <button [ngClass]="{'active': ispluskeypressed, 'inactive': !ispluskeypressed}" id="heightbutton">Height
+                  Increase</button>
+              </div>
+              <div class="col">
+                <button [ngClass]="{'active': isminuskeypressed, 'inactive': !isminuskeypressed}"
+                  id="heightbutton">Height Decrease</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      Column
+    </div>
+    <div class="col">
+      Column
+    </div>
+  </div>
+  <div>
+    <app-sensor></app-sensor>
+  </div>
+  
+</div>

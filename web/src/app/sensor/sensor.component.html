@@ -1,0 +1,52 @@
+<div class="row justify-content-center " style="margin-bottom: 50px; border: 3px  ;">
+    <div class="col " >
+      <div class="card" style="background-color: antiquewhite;">
+        <div class="card-header">
+          <button (click)="sensorData()" type="button" class="btn btn-primary" >Update</button>
+        </div>
+        <div class="card-body">
+          <div class="container">
+            <div class="row justify-content-center align-items-center g-2">
+              <div class="col">
+                <div class="card text-center">
+                  
+                  <div class="card-body">
+                    <h4 class="card-title">Lux Value</h4>
+                    <p class="card-text">{{luxValue}}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card text-center">
+
+                  <div class="card-body">
+                    <h4 class="card-title">Colour Temprature</h4>
+                    <p class="card-text text-center">{{colourTemp}}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card text-center">
+
+                  <div class="card-body text-left">
+                    <h4 class="card-title">RGB Values</h4>
+                    <!-- Horizontal under breakpoint -->
+                    <ul class="list-group list-group-horizontal-md">
+                      <li class="list-group-item">Red - {{redVal}}</li>
+                      <li class="list-group-item">Green - {{greenVal}}</li>
+                      <li class="list-group-item">Blue- {{blueVal}}</li>
+                    </ul>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
